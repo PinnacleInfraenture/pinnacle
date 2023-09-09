@@ -2,9 +2,9 @@
 import Logo from "$lib/assets/logo.svg";
 import {inView} from "../../stores/inViewStore";
 </script>
-<nav class={`border-b bg-transparent justify-between flex flex-row border-[#D2D2D259] w-full`}>
+<nav class={`border-b bg-transparent justify-between flex flex-row border-[#D2D2D259] items-center h-28 w-full`}>
 	<img src={Logo} alt="Logo" class="h-20 my-4">
-	<ul class="inline-flex items-center gap-x-4 font-casta font-medium">
+	<ul class="inline-flex items-center gap-x-4 h-full min-h-full font-casta font-medium">
 		<li class="relative h-full text-center grid place-items-center">
 			<a href="#home" class={`${$inView==="#home"?"text-fadedGolden":"text-white"} transition-colors duration-500 ease-in-out`}>Home</a>
 			<div class={`${$inView==="#home"?"opacity-1" : "opacity-0"} absolute bottom-0 left-0 rounded-t-xl bg-fadedGolden w-full h-1 transition-all duration-500 ease-in-out`}></div>
