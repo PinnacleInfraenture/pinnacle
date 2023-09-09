@@ -1,7 +1,10 @@
 <script>
 	import YellowLines from "$lib/assets/yellowLines.svg";
 	import AboutUs from "$lib/assets/aboutus.png";
+	import IntersectionObserver from "$lib/components/IntersectionObserver.svelte";
+
 </script>
+<IntersectionObserver id="home" sec="#home">
 <div class="h-screen w-full bg-black/40 bg-cover animateBG bg-no-repeat grid place-items-center">
 	<div class="">
 		<h1 class="capitalize text-white font-casta text-[100px]">
@@ -21,25 +24,26 @@
 		</div>
 	</div>
 </div>
-<div class="w-full bg-greyBG py-32 relative px-32 flex md:flex-row gap-x-10">
+</IntersectionObserver>
+<IntersectionObserver id="aboutus" sec='#aboutus' className="w-full bg-greyBG py-32 relative px-32 flex md:flex-row gap-x-10">
 	<img src={YellowLines} alt="" class="absolute top-5 left-5">
-<div class="md:w-[55%]">
-	<h3 id='aboutus' class="font-semibold font-casta text-4xl relative">About Us</h3>
+	<div class="md:w-[55%]">
+		<h3 id='aboutUs' class="font-semibold font-casta text-4xl relative">About Us</h3>
 		<h4 class="font-medium text-white mt-14 text-2xl">Pinnacle is a rapidly growing, innovative engineering and construction company. With over 10+ years of experience in delivering exceptionally high standard construction projects, specializing in providing a comprehensive build and design, construction management, facility management and infrastructure services.</h4>
-						<button class="bg-fadedGolden mt-10 text-2xl border-2 border-fadedGolden px-8 py-2 rounded-md text-white font-casta">Learn More</button>
+		<button class="bg-fadedGolden mt-10 text-2xl border-2 border-fadedGolden px-8 py-2 rounded-md text-white font-casta">Learn More</button>
 
-		</div>
+	</div>
 	<div class="md:w-[45%]">
 		<img src={AboutUs} alt="About Us">
 	</div>
 
-</div>
+</IntersectionObserver>
 <style>
-	#aboutus{
-	font-weight: 600;
-	font-family: "Casta";
-	color:transparent;
-	-webkit-text-stroke: 1px #D8C691;
+	#aboutUs{
+		font-weight: 600;
+		font-family: "Casta";
+		color:transparent;
+		-webkit-text-stroke: 1px #D8C691;
 		font-size:60px;
 		width:fit-content;
 	}
@@ -52,50 +56,50 @@
 	50%{transform:translateY(-33%)}
 	80%{transform:translateY(-66%)}
 	90%{transform:translateY(-66%)}
-		100%{transform:translateY(0%)}
+	100%{transform:translateY(0%)}
 	}
-	#aboutus:after{
-	background: linear-gradient(to top, #333333,#333333,transparent);
+	#aboutUs:after{
+		background: linear-gradient(to top, #333333,#333333,transparent);
 		position:absolute;
 		width:100%;
 		top:15px;
-	left:0;
+		left:0;
 		text-align: center;
 		font-size:50px;
 		font-weight:600;
 		color:#D8C691;
 		content:"About Us";
-	}
-	@keyframes bgAnimate{
-	0%{
-		background-image: url('$lib/assets/bg-1.png');
-	}
-	10%{
+		}
+		@keyframes bgAnimate{
+		0%{
+			background-image: url('$lib/assets/bg-1.png');
+		}
+		10%{
 		background-image: url('$lib/assets/bg-1.png');
 	}
 	40%{
-		background-image: url('$lib/assets/bg-2.png');
+	background-image: url('$lib/assets/bg-2.png');
 	}
 	50%{
 		background-image: url('$lib/assets/bg-2.png');
 	}
 	80%{
-		background-image: url('$lib/assets/bg-3.png');
+	background-image: url('$lib/assets/bg-3.png');
 	}
 	90%{
 		background-image: url('$lib/assets/bg-3.png');
 	}
 	100%{
-		background-image: url('$lib/assets/bg-1.png');
+	background-image: url('$lib/assets/bg-1.png');
 	}
 	}
 	.animateText{
-	transform:translateY(-33%);
-	animation: textScroll 5s ease-in-out infinite forwards;
-	}
-	.animateBG{
-		transition: background-image 1s ease-in-out;
-		animation:bgAnimate 5s ease-in-out infinite forwards
+		transform:translateY(-33%);
+		animation: textScroll 5s ease-in-out infinite forwards;
+		}
+		.animateBG{
+			transition: background-image 1s ease-in-out;
+			animation:bgAnimate 5s ease-in-out infinite forwards
 
 	}
 </style>
