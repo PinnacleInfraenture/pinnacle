@@ -1,6 +1,7 @@
 <script>
 import Logo from "$lib/assets/logo.svg";
 import {inView} from "../../stores/inViewStore";
+$: console.log($inView)
 </script>
 <nav class={`border-b bg-transparent justify-between flex flex-row border-[#D2D2D259] items-center h-28 w-full`}>
 	<img src={Logo} alt="Logo" class="h-20 my-4">
