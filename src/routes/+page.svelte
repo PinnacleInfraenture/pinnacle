@@ -1,14 +1,12 @@
 <script>
-	import YellowLines from "$lib/assets/yellowLines.svg";
-	import AboutUs from "$lib/assets/aboutus.png";
 	import IntersectionObserver from "$lib/components/IntersectionObserver.svelte";
 	import Section100Img from "$lib/assets/100section.png"
 	import Services from "$lib/components/Services.svelte";
-	import SectionTitle from "$lib/components/SectionTitle.svelte";
-	import { text } from "@sveltejs/kit";
 	import ContactUs from "$lib/components/ContactUs.svelte";
+	import AboutUs from "$lib/components/AboutUs.svelte";
+	import OurWorks from "$lib/components/OurWorks.svelte";
 </script>
-<IntersectionObserver id="home" sec="#home">
+<IntersectionObserver id="home" classNames="">
 	<div class="h-screen w-full bg-black/40 bg-cover animateBG bg-no-repeat grid place-items-center">
 		<div class="">
 			<h1 class="capitalize text-white font-casta text-[100px]">
@@ -29,18 +27,7 @@
 		</div>
 	</div>
 </IntersectionObserver>
-<IntersectionObserver id="aboutus" sec='#aboutus' className="w-full bg-greyBG py-32 relative px-32 flex md:flex-row gap-x-10">
-	<img src={YellowLines} alt="" class="absolute top-5 left-5">
-	<div class="md:w-[55%]">
-		<SectionTitle title="About Us" />
-		<h4 class="font-medium text-white mt-14 text-2xl">Pinnacle is a rapidly growing, innovative engineering and construction company. With over 10+ years of experience in delivering exceptionally high standard construction projects, specializing in providing a comprehensive build and design, construction management, facility management and infrastructure services.</h4>
-		<button class="bg-fadedGolden mt-10 text-2xl border-2 border-fadedGolden px-8 py-2 rounded-md text-white font-casta">Learn More</button>
-
-	</div>
-	<div class="md:w-[45%]">
-		<img src={AboutUs} alt="About Us">
-	</div>
-</IntersectionObserver>
+<AboutUs />
 <div class="relative">
 	<img src={Section100Img} alt="100%">
 	<div class="absolute top-0 left-0 grid w-full h-full grid-cols-3 place-items-center place-content-center">
@@ -66,6 +53,7 @@
 	</div>
 </div>
 <Services />
+<OurWorks />
 <ContactUs />
 <style>
 	@keyframes textScroll{
