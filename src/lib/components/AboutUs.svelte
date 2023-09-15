@@ -1,8 +1,6 @@
 <script>
 	import YellowLines from "$lib/assets/yellowLines.svg";
 	import AboutUs from "$lib/assets/aboutus.png";
-	import {inview} from "svelte-inview";
-	import {inView} from "../../stores/inViewStore";
 	import SectionTitle from "$lib/components/SectionTitle.svelte";
 	import IntersectionObserver from "./IntersectionObserver.svelte";
 
