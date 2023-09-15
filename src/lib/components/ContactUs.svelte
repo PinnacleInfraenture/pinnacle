@@ -7,7 +7,7 @@
 </script>
 
 
-<IntersectionObserver id="contactus" sec='#contactus' className="w-full bg-greyBG py-32 flex flex-col md:flex-row items-stretch gap-x-20 relative pr-32">
+<IntersectionObserver id="contactus" classNames="w-full bg-greyBG py-32 flex flex-col md:flex-row items-stretch gap-x-20 relative pr-32">
 	<div class="w-[40%]">
 		<img src={ContactUs} class="w-full h-full object-cover" alt="Contact Us">
 	</div>

@@ -8,7 +8,7 @@
 	import HoverServices from "./HoverServices.svelte";
 
 </script>
-<IntersectionObserver id="services" sec='#services' className="w-full bg-greyBG py-32 relative px-32">
+<IntersectionObserver id="services" classNames="w-full bg-greyBG py-32 relative px-32">
 	<img src={YellowLines} alt="" class="absolute top-5 right-5">
 	<SectionTitle title="Services" />
 	<h4 class="font-medium text-white mt-14 text-2xl">Our ability to deliver quality services has grown over the years because of experienced workforce.</h4> <div class="grid grid-cols-1 md:grid-cols-3 md:gap-x-12">
