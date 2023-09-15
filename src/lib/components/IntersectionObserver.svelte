@@ -1,31 +1,19 @@
 <script lang="ts">
 	import { inView } from "../../stores/inViewStore";
-	let observer: IntersectionObserver | null = null;
-	let section: HTMLDivElement | null = null;
-	export let sec: string = "";
-	export let id: string = "";
-	const options: IntersectionObserverInit = {
-		root: null, 
-		rootMargin: "0px", 
-		threshold: 1, 
-	};
-	export let className: string = ""; 
-	const handleIntersection: IntersectionObserverCallback = (entries) => {
-		entries.forEach((entry) => {
-			if (entry.isIntersecting) {
-				inView.set(sec);
-			}
-		});
-	};
-	$: {
-		if (section && !observer) {
-			observer = new IntersectionObserver(handleIntersection, options);
-			observer.observe(section);
-		}
-	}
+	export let id:string;
+	import {inview} from "svelte-inview";
+	export let classNames:string;
 </script>
 
-<div bind:this={section} id={id} class={className}>
+<div use:inview={{
+	rootMargin: '0px',
+	threshold: 1,
+	root: null,
+}} 
+on:inview_enter={()=>{
+			inView.set("#"+id);
+}}
+ id={id} class={classNames}>
 	<slot></slot>
 </div>
 
