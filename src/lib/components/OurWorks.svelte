@@ -7,7 +7,8 @@
 	import { onMount } from "svelte";
 	let imagePaths:string[] = [];
 	onMount(async ()=>{
-		imagePaths = await loadImagePaths();
+		const temp = await loadImagePaths();
+		imagePaths = temp.map(x=>x.replace("/static",""))
 	})
 	function rotateArray(arr:string[], positions=5) {
   if (arr.length === 0 || positions === 0) {
