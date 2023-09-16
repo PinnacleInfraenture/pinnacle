@@ -3,7 +3,6 @@
   import Carousel from 'svelte-carousel';
   import { browser } from '$app/environment';
   import WhiteRight from "$lib/assets/whiteRight.svg"
-  import GreyRight from "$lib/assets/greyRight.svg"
   let carousel;
   const data=[1,2,3,4,5]
 </script>
