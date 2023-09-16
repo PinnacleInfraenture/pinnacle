@@ -5,6 +5,7 @@
 	import ContactUs from "$lib/components/ContactUs.svelte";
 	import AboutUs from "$lib/components/AboutUs.svelte";
 	import OurWorks from "$lib/components/OurWorks.svelte";
+	import Testimonials from "$lib/components/Testimonials.svelte";
 </script>
 <IntersectionObserver id="home" classNames="">
 	<div class="h-screen w-full bg-black/40 bg-cover animateBG bg-no-repeat grid place-items-center">
@@ -54,6 +55,7 @@
 </div>
 <Services />
 <OurWorks />
+<Testimonials />
 <ContactUs />
 <style>
 	@keyframes textScroll{
