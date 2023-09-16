@@ -11,7 +11,7 @@
 	<div class="w-[40%]">
 		<img src={ContactUs} class="w-full h-full object-cover" alt="Contact Us">
 	</div>
-	<img src={YellowLines} alt="" class="absolute top-5 right-5">
+	<img src={YellowLines} alt="" class="absolute -top-40 right-5">
 	<div class="flex h-full min-h-full  flex-col w-[60%] justify-between">
 		<SectionTitle title="Contact Us" />
 		<h4 class="text-white font-medium text-2xl mt-8">Any queries? Feel free to reach us.</h4>
