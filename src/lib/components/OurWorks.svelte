@@ -38,19 +38,19 @@
 		} class="absolute top-1/2 bottom-1/2 -right-20">
 		<img src={ArrowRight} alt="" class="h-16">
 		</button>
-		<img src={imagePaths[0]} alt="Our Works" class="w-full h-full object-cover" />
+		<img src={imagePaths[0]} alt="Our Works" class="w-full h-full object-cover z-30" />
 		<div class="grid grid-cols-2 gap-5">
 		<div class="w-full h-full aspect-square">
-			<img src={imagePaths[1]} alt="" class="w-full h-full object-cover">
+			<img src={imagePaths[1]} alt="" class="w-full h-full object-cover z-30">
 		</div>
 		<div class="w-full h-full aspect-square">
-			<img src={imagePaths[2]} alt="" class="w-full h-full object-cover">
+			<img src={imagePaths[2]} alt="" class="w-full h-full object-cover z-30">
 		</div>
 		<div class="w-full h-full aspect-square">
-			<img src={imagePaths[3]} alt="" class="w-full h-full object-cover">
+			<img src={imagePaths[3]} alt="" class="w-full h-full object-cover z-30">
 		</div>
 		<div class="w-full h-full aspect-square">
-			<img src={imagePaths[4]} alt="" class="w-full h-full object-cover">
+			<img src={imagePaths[4]} alt="" class="w-full h-full object-cover z-30">
 		</div>
 	</div>
 	</div>
