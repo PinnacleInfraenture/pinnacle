@@ -1,9 +1,9 @@
-<script>
+<script lang="ts">
 	import ReviewCard from "./ReviewCard.svelte";
   import Carousel from 'svelte-carousel';
   import { browser } from '$app/environment';
   import WhiteRight from "$lib/assets/whiteRight.svg"
-  let carousel;
+  let carousel:any;
   const data=[1,2,3,4,5]
 </script>
 
