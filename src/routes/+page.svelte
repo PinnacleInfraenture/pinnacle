@@ -71,25 +71,25 @@
 	}
 		@keyframes bgAnimate{
 		0%{
-			background-image: url('$lib/assets/bg-1.png');
+			background-image: url('$lib/assets/bg-1.webp');
 		}
 		10%{
-		background-image: url('$lib/assets/bg-1.png');
+		background-image: url('$lib/assets/bg-1.webp');
 	}
 	40%{
-	background-image: url('$lib/assets/bg-2.png');
+	background-image: url('$lib/assets/bg-2.webp');
 	}
 	50%{
-		background-image: url('$lib/assets/bg-2.png');
+		background-image: url('$lib/assets/bg-2.webp');
 	}
 	80%{
-	background-image: url('$lib/assets/bg-3.png');
+	background-image: url('$lib/assets/bg-3.webp');
 	}
 	90%{
-		background-image: url('$lib/assets/bg-3.png');
+		background-image: url('$lib/assets/bg-3.webp');
 	}
 	100%{
-	background-image: url('$lib/assets/bg-1.png');
+	background-image: url('$lib/assets/bg-1.webp');
 	}
 	}
 	.animateText{
