@@ -10,52 +10,62 @@
 		const temp = await loadImagePaths();
 		imagePaths = temp.map(x=>x.replace("/static",""))
 	})
-	function rotateArray(arr:string[], positions=5) {
-  if (arr.length === 0 || positions === 0) {
-    return arr;
-  }
+	function rotateArray(arr:string[], positions = 5) {
+		if (arr.length === 0 || positions === 0) {
+			return arr;
+		}
 
-  const n = arr.length;
-  const normalizedPositions = ((positions % n) + n) % n;
+		const n = arr.length;
+		const normalizedPositions = ((positions % n) + n) % n;
 
-  return [...arr.slice(normalizedPositions), ...arr.slice(0, normalizedPositions)];
-}
+		// Instead of using array slices, we'll create a new array without modifying the original.
+		const rotatedArray = [];
+		for (let i = normalizedPositions; i < n; i++) {
+			rotatedArray.push(arr[i]);
+		}
+		for (let i = 0; i < normalizedPositions; i++) {
+			rotatedArray.push(arr[i]);
+		}
 
+		return rotatedArray;
+	}
 
 </script>
 
-<IntersectionObserver id="ourworks" classNames="w-full bg-greyBG py-32 relative px-32">
+<IntersectionObserver id="ourworks" classNames="w-full bg-greyBG py-10 relative px-32">
 	<img src={YellowDots} alt="Yellow Dots" class="absolute top-0 right-0">
 	<SectionTitle title="Our Works" />
 	<h4 class="font-medium text-2xl text-white my-20">Here are our recent building projects.</h4>
-	<div class="grid grid-cols-2 gap-x-10 mt-10 relative">
+	<div class="grid grid-cols-2 gap-x-10 mt-10 relative h-[80vh]">
 		<button on:click={
 			()=>imagePaths=rotateArray(imagePaths,-5)
-		} class="absolute top-1/2 bottom-1/2 -left-20">
-		<img src={ArrowRight} alt="" class="h-16 rotate-180">
+			} class="absolute top-1/2 bottom-1/2 -left-20">
+			<img src={ArrowRight} alt="" class="h-16 rotate-180">
 		</button>
 		<button on:click={
 			()=>imagePaths=rotateArray(imagePaths,5)
-		} class="absolute top-1/2 bottom-1/2 -right-20">
-		<img src={ArrowRight} alt="" class="h-16">
+			} class="absolute top-1/2 bottom-1/2 -right-20">
+			<img src={ArrowRight} alt="" class="h-16">
 		</button>
-		<img src={imagePaths[0]} alt="Our Works" class="w-full h-full object-cover z-30" />
-		<div class="grid grid-cols-2 gap-5">
-		<div class="w-full h-full aspect-square">
-			<img src={imagePaths[1]} alt="" class="w-full h-full object-cover z-30">
+		<div class="w-full h-full min-h-full">
+			<img src={imagePaths[0]} alt="Our Works" class="w-full h-full object-cover z-30" />
 		</div>
-		<div class="w-full h-full aspect-square">
-			<img src={imagePaths[2]} alt="" class="w-full h-full object-cover z-30">
+		<div class="grid grid-cols-2 grid-rows-2 gap-5">
+			<div class="w-full h-full aspect-square">
+				<img src={imagePaths[1]} alt="" class="w-full h-full aspect-square object-cover z-30">
+			</div>
+			<div class="w-full h-full aspect-square">
+				<img src={imagePaths[2]} alt="" class="w-full h-full aspect-square object-cover z-30">
+			</div>
+			<div class="w-full h-full aspect-square">
+				<img src={imagePaths[3]} alt="" class="w-full h-full aspect-square object-cover z-30">
+			</div>
+			<div class="w-full h-full aspect-square">
+				<img src={imagePaths[4]} alt="" class="w-full h-full aspect-square object-cover z-30">
+			</div>
 		</div>
-		<div class="w-full h-full aspect-square">
-			<img src={imagePaths[3]} alt="" class="w-full h-full object-cover z-30">
-		</div>
-		<div class="w-full h-full aspect-square">
-			<img src={imagePaths[4]} alt="" class="w-full h-full object-cover z-30">
-		</div>
-	</div>
 	</div>
 	<!-- {#each imagePaths as imagePath}
-    <img src={imagePath} alt="Our Works" />
-  {/each} -->
+<img src={imagePath} alt="Our Works" />
+{/each} -->
 </IntersectionObserver>
