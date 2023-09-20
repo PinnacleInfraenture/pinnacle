@@ -8,22 +8,22 @@
 	import Testimonials from "$lib/components/Testimonials.svelte";
 </script>
 <IntersectionObserver id="home" classNames="">
-	<div class="h-screen w-full bg-black/40 bg-cover animateBG bg-no-repeat grid place-items-center">
+	<div class="h-screen w-full bg-black/40 bg-cover animateBG bg-no-repeat grid place-items-center max-md:px-10">
 		<div class="">
-			<h1 class="capitalize text-white font-casta text-[100px]">
+			<h1 class="capitalize text-white font-casta text-[42px] md:text-[100px]">
 				We redefine your
 			</h1>
-			<div class="h-[120px] overflow-hidden">
-				<div class="font-casta text-fadedGolden animateText text-[100px]">
+			<div class="h-[48px] md:h-[120px] overflow-hidden">
+				<div class="font-casta text-fadedGolden animateText text-[42px] md:text-[100px]">
 					<h2>Dream.</h2>
 					<h2>Desire.</h2>
 					<h2>Future.</h2>
 				</div>
 			</div>
-			<h3 class="text-white text-2xl py-10 font-medium">Dreams are meant to come true, We’ll make it happen for you</h3>
+			<h3 class="text-white text-base md:text-2xl py-5 md:py-10 font-medium">Dreams are meant to come true, We’ll make it happen for you</h3>
 			<div class="inline-flex gap-x-4">
-				<button class="bg-fadedGolden text-2xl border-2 border-fadedGolden px-8 py-2 rounded-md text-white font-casta">Our Works</button>
-				<button class="bg-transparent text-2xl border-fadedGolden border-2 px-8 py-2 rounded-md text-fadedGolden font-casta">Contact Us</button>
+				<button class="bg-fadedGolden text-md md:text-2xl border-2 border-fadedGolden px-8 py-2 rounded-md text-white font-casta">Our Works</button>
+				<button class="bg-transparent text-md md:text-2xl border-fadedGolden border-2 px-8 py-2 rounded-md text-fadedGolden font-casta">Contact Us</button>
 			</div>
 		</div>
 	</div>
@@ -33,22 +33,22 @@
 	<img src={Section100Img} alt="100%">
 	<div class="absolute top-0 left-0 grid w-full h-full grid-cols-3 place-items-center place-content-center">
 		<div class="">
-			<h3 class="text-white font-bold text-6xl text-center">
+			<h3 class="text-white font-bold text-md md:text-6xl text-center">
 				100+
 			</h3>
-			<h4 class="text-medium text-3xl text-white text-center">Projects</h4>
+			<h4 class="text-medium text-[8px] md:text-3xl text-white text-center">Projects</h4>
 		</div>
 		<div class="">
-			<h3 class="text-white font-bold text-6xl text-center">
+			<h3 class="text-white font-bold text-md md:text-6xl text-center">
 				100+
 			</h3>
-			<h4 class="text-medium text-3xl text-white text-center">Happy Customers</h4>
+			<h4 class="text-medium text-[8px] md:text-3xl text-white text-center">Happy Customers</h4>
 		</div>
 		<div class="">
-			<h3 class="text-white font-bold text-6xl text-center">
+			<h3 class="text-white font-bold text-md md:text-6xl text-center">
 				100%
 			</h3>
-			<h4 class="text-medium text-white text-3xl text-center">Efficiency</h4>
+			<h4 class="text-medium text-[8px] text-white md:text-3xl text-center">Efficiency</h4>
 		</div>
 
 	</div>
