@@ -1,5 +1,5 @@
 <script lang="ts">
-	import ReviewCard from "./ReviewCard.svelte";
+  import ReviewCard from "./ReviewCard.svelte";
   import Carousel from 'svelte-carousel';
   import { browser } from '$app/environment';
   import WhiteRight from "$lib/assets/whiteRight.svg"
@@ -13,7 +13,7 @@
   let:currentPageIndex
   autoplay
   autoplayDuration={2000}
-  particlesToShow={1.5}
+  particlesToShow={1.3}
   duration={1000}
   dots={false}
 
