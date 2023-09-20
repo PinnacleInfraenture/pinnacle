@@ -8,7 +8,7 @@
 
 
 <IntersectionObserver id="contactus" classNames="w-full bg-greyBG py-32 flex flex-col md:flex-row items-stretch gap-x-20 relative max-md:px-10 md:pr-32">
-	<div class="hidden md:w-[40%]">
+	<div class="max-md:hidden md:w-[40%]">
 		<img src={ContactUs} class="w-full h-full object-cover" alt="Contact Us">
 	</div>
 	<img src={YellowLines} alt="" class="absolute -top-40 right-5">
