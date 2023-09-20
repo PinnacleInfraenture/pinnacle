@@ -7,14 +7,14 @@
 </script>
 
 
-<IntersectionObserver id="contactus" classNames="w-full bg-greyBG py-32 flex flex-col md:flex-row items-stretch gap-x-20 relative pr-32">
-	<div class="w-[40%]">
+<IntersectionObserver id="contactus" classNames="w-full bg-greyBG py-32 flex flex-col md:flex-row items-stretch gap-x-20 relative max-md:px-10 md:pr-32">
+	<div class="hidden md:w-[40%]">
 		<img src={ContactUs} class="w-full h-full object-cover" alt="Contact Us">
 	</div>
 	<img src={YellowLines} alt="" class="absolute -top-40 right-5">
-	<div class="flex h-full min-h-full  flex-col w-[60%] justify-between">
+	<div class="flex h-full min-h-full  flex-col w-full md:w-[60%] justify-between">
 		<SectionTitle title="Contact Us" />
-		<h4 class="text-white font-medium text-2xl mt-8">Any queries? Feel free to reach us.</h4>
+		<h4 class="text-white font-medium text-md max-md:text-center md:text-2xl mt-8">Any queries? Feel free to reach us.</h4>
 		<form action="" class="flex flex-col gap-y-10 mt-10">
 			<input class="px-10 py-4" placeholder="Name*">
 			<input  class="px-10 py-4" placeholder="Email*">
