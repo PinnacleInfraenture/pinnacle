@@ -75,7 +75,7 @@
 					<button on:click={()=>{
 						console.log("Sax")
 						imagePaths=rotateArray(imagePaths,5)
-					}} class="font-casta text-md px-6 w-fit py-3 rounded-lg border-2 border-fadedGolden text-fadedGolden">Load More</button>
+					}} class="font-casta text-md px-6 w-fit py-3 rounded-lg border-2 border-fadedGolden z-30 text-fadedGolden">Load More</button>
 
 	</div>
 </IntersectionObserver>
