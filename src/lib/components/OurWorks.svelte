@@ -34,17 +34,20 @@
 
 <IntersectionObserver id="ourworks" classNames="w-full bg-greyBG py-10 relative px-10 md:px-32">
 	<img src={YellowDots} alt="Yellow Dots" class="absolute top-0 right-0">
+				<div class="max-md:grid max-md:place-items-center">
+
 	<SectionTitle title="Our Works" />
+		</div>
 	<h4 class="font-medium text-md md:text-2xl text-white my-5 md:my-20">Here are our recent building projects.</h4>
 	<div class="grid grid-cols-1 md:grid-cols-2 gap-x-10 mt-10 gap-y-5 relative md:h-[80vh]">
 		<button on:click={
 			()=>imagePaths=rotateArray(imagePaths,-5)
-			} class="absolute top-1/2 bottom-1/2 -left-20">
+			} class="max-md:hidden absolute top-1/2 bottom-1/2 -left-20">
 			<img src={ArrowRight} alt="" class="h-16 rotate-180">
 		</button>
 		<button on:click={
 			()=>imagePaths=rotateArray(imagePaths,5)
-			} class="absolute top-1/2 bottom-1/2 -right-20">
+			} class="max-md:hidden absolute top-1/2 bottom-1/2 -right-20">
 			<img src={ArrowRight} alt="" class="h-16">
 		</button>
 		<div class="w-full h-full min-h-full">
@@ -65,7 +68,10 @@
 			</div>
 		</div>
 	</div>
-	<!-- {#each imagePaths as imagePath}
-<img src={imagePath} alt="Our Works" />
-{/each} -->
+	<div class="md:hidden grid place-items-center mt-4">
+					<button on:click={()=>{
+						imagePaths=rotateArray(imagePaths,5)
+					}} class="font-casta text-md px-6 w-fit py-3 rounded-lg border-2 border-fadedGolden text-fadedGolden">Load More</button>
+
+	</div>
 </IntersectionObserver>
