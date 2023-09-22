@@ -22,8 +22,8 @@
 			</div>
 			<h3 class="text-white text-base md:text-2xl py-5 md:py-10 font-medium">Dreams are meant to come true, We’ll make it happen for you</h3>
 			<div class="inline-flex gap-x-4">
-				<button class="bg-fadedGolden text-md md:text-2xl border-2 border-fadedGolden px-8 py-2 rounded-md text-white font-casta">Our Works</button>
-				<button class="bg-transparent text-md md:text-2xl border-fadedGolden border-2 px-8 py-2 rounded-md text-fadedGolden font-casta">Contact Us</button>
+				<button class="bg-fadedGolden text-md md:text-2xl border-2 border-fadedGolden px-5 md:px-8 py-2 rounded-md text-white font-casta">Our Works</button>
+				<button class="bg-transparent text-md md:text-2xl border-fadedGolden border-2 px-5 md:px-8 py-2 rounded-md text-fadedGolden font-casta">Contact Us</button>
 			</div>
 		</div>
 	</div>
