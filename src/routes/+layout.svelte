@@ -22,7 +22,7 @@ return ()=>document.removeEventListener('scroll',scrollDetect)
 	<title>Pinnacle</title> 
 </svelte:head>
 
-<div class={`fixed top-0 left-0 w-full z-50 px-32 ${!top? "backdrop-blur-md":""}`}>
+<div class={`fixed top-0 left-0 w-full z-50 px-4 md:px-32 ${!top? "backdrop-blur-md":""}`}>
 	<Navbar />
 </div>
 <slot />
