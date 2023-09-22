@@ -25,4 +25,14 @@
 	color:#D8C691;
 	content:attr(data-text);
 }
+@media only screen and (max-width: 600px) {
+	.sectionTitle{
+		font-size:30px;
+	}
+	.sectionTitle:after{
+				font-size:25px;
+
+	}
+}
+
 </style>
