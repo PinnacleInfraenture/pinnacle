@@ -29,6 +29,9 @@
 
 		return rotatedArray;
 	}
+	function fuck(){
+		console.log("Kittu")
+	}
 
 </script>
 
@@ -70,6 +73,7 @@
 	</div>
 	<div class="md:hidden grid place-items-center mt-4">
 					<button on:click={()=>{
+						console.log("Sax")
 						imagePaths=rotateArray(imagePaths,5)
 					}} class="font-casta text-md px-6 w-fit py-3 rounded-lg border-2 border-fadedGolden text-fadedGolden">Load More</button>
 
