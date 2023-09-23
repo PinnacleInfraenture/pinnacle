@@ -12,13 +12,13 @@ $: console.log($inView)
 	<img src={Logo} alt="Logo" class="h-14 md:h-20">
 			</div>
 
-	<button on:click={()=>{
+	<button class="md:hidden" on:click={()=>{
 		hamburger=!hamburger;
 	}}>
 		<img src={MobileHamburger} alt="" class="w-6">
 	</button>
 	{#if hamburger}
-		<ul in:fade out:fly class="w-full absolute backdrop-blur-md py-2 top-full items-end right-0 flex flex-col gap-y-2">
+		<ul in:fade out:fly class="w-full md:hidden absolute backdrop-blur-md py-2 top-full items-end right-0 flex flex-col gap-y-2">
 		<li class="relative h-full text-center grid place-items-center">
 			<a href="#home" class={`${$inView==="#home"?"text-fadedGolden":"text-white"} transition-colors duration-500 ease-in-out`}>Home</a>
 			<div class={`${$inView==="#home"?"opacity-1" : "opacity-0"} absolute bottom-0 left-0 rounded-t-xl bg-fadedGolden w-full h-1 transition-all duration-500 ease-in-out`}></div>
