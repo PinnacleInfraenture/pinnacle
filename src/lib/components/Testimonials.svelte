@@ -3,9 +3,10 @@
 	import TestimonialCarousel from "./TestimonialCarousel.svelte";
 	import Quotes from "$lib/assets/Quotes.svg"
 	import YellowLines from "$lib/assets/yellowLines.svg";
+	import IntersectionObserver from "./IntersectionObserver.svelte";
 </script>
 
-<div class="w-full bg-greyBG py-32 relative px-10 md:pr-0 md:pl-32">
+<IntersectionObserver id="" classNames="w-full bg-greyBG py-32 relative px-10 md:pr-0 md:pl-32">
 	<img src={YellowLines} alt="" class="absolute -top-40 z-10 left-5">
 				<div class="max-md:grid max-md:place-items-center">
 
@@ -18,4 +19,4 @@
 	</div>
 	<TestimonialCarousel />
 	</div>
-</div>
+</IntersectionObserver>
