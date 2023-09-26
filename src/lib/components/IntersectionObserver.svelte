@@ -11,9 +11,8 @@
 	threshold: 0.8,
 	root: null,
 }} 
-	on:inview_enter={event=>{
-		inViewStore.set(id);
-
+	on:inview_enter={()=>{
+		id!==""&&inViewStore.set(id);
 	}}>
 	<div
 		use:inview={{
@@ -21,10 +20,10 @@
 			threshold: 0.3,
 			root: null,
 		}} 
-		on:inview_enter={evt=>{
+		on:inview_enter={()=>{
 			iv=true;
 		}}
-			on:inview_leave={evt=>{
+			on:inview_leave={()=>{
 			iv=false;
 
 	}}
