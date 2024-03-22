@@ -35,13 +35,12 @@
 
 </script>
 
-<IntersectionObserver id="ourworks" classNames="w-full bg-greyBG py-10 relative px-10 md:px-32">
+<IntersectionObserver id="portfolio" classNames="w-full bg-greyBG py-10 relative px-10 md:px-32">
 	<img src={YellowDots} alt="Yellow Dots" class="absolute top-0 right-0">
 				<div class="max-md:grid max-md:place-items-center">
-
-	<SectionTitle title="Our Works" />
+	<SectionTitle title="Portfolio" />
 		</div>
-	<h4 class="font-medium text-md md:text-2xl text-white my-5 md:my-20">Here are our recent building projects.</h4>
+	<h4 class="font-medium text-md md:text-2xl text-white my-5 md:my-20">Our extensive portfolio of successful projects showcases our ability to bring your dream home to life.</h4>
 	<div class="grid grid-cols-1 md:grid-cols-2 gap-x-10 mt-10 gap-y-5 relative md:h-[80vh]">
 		<button on:click={
 			()=>imagePaths=rotateArray(imagePaths,-5)
@@ -54,7 +53,7 @@
 			<img src={ArrowRight} alt="" class="h-16">
 		</button>
 		<div class="w-full h-full min-h-full">
-			<img src={imagePaths[0]} alt="Our Works" class="w-full h-full object-cover z-30" />
+			<img src={imagePaths[0]} alt="Portfolio" class="w-full h-full object-cover z-30" />
 		</div>
 		<div class="grid grid-cols-1 grid-rows-1 md:grid-cols-2 md:grid-rows-2 gap-5">
 			<div class="w-full h-full aspect-square">
@@ -73,7 +72,6 @@
 	</div>
 	<div class="md:hidden grid place-items-center mt-4">
 					<button on:click={()=>{
-						console.log("Sax")
 						imagePaths=rotateArray(imagePaths,5)
 					}} class="font-casta text-md px-6 w-fit py-3 rounded-lg border-2 border-fadedGolden z-30 text-fadedGolden">Load More</button>
 
