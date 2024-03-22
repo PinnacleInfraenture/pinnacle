@@ -12,7 +12,8 @@
 		<div class="max-md:grid max-md:place-items-center">
 		<SectionTitle title="About Us" />
 			</div>
-		<h4 class="font-medium text-white mt-14 text-md md:text-2xl">Pinnacle is a rapidly growing, innovative engineering and construction company. With over 10+ years of experience in delivering exceptionally high standard construction projects, specializing in providing a comprehensive build and design, construction management, facility management and infrastructure services.</h4>
+		<h4 class="font-medium text-white mt-14 text-md md:text-2xl">At Pinnacle Infraventure, we are proud to be recognized among the top builders in Bangalore. With more than a decade of experience in home construction, our legacy in the city is a testament to our commitment to excellence. Our expertise goes beyond just house construction; we have established ourselves as a trusted name among home builders in Bangalore. 
+</h4>
 		<button class="bg-fadedGolden mt-10 text-md md:text-2xl border-2 border-fadedGolden px-8 py-2 rounded-md text-white font-casta">Learn More</button>
 
 	</div>
