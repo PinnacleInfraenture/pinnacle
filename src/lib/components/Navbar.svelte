@@ -32,8 +32,8 @@ $: console.log($inView)
 			<div class={`${$inView==="services"?"opacity-100" : "opacity-0"} absolute bottom-0 left-0 rounded-t-xl bg-fadedGolden w-full h-1 transition-all duration-500 ease-in-out`}></div>
 		</li>
 		<li class="relative h-full text-center grid place-items-center">
-			<a href="#ourworks" class={`${$inView==="ourworks"?"text-fadedGolden":"text-white"} transition-colors duration-500 ease-in-out`}>Our Works</a>
-			<div class={`${$inView==="ourworks"?"opacity-100" : "opacity-0"} absolute bottom-0 left-0 rounded-t-xl bg-fadedGolden w-full h-1 transition-all duration-500 ease-in-out`}></div>
+			<a href="#portfolio" class={`${$inView==="portfolio"?"text-fadedGolden":"text-white"} transition-colors duration-500 ease-in-out`}>Our Works</a>
+			<div class={`${$inView==="portfolio"?"opacity-100" : "opacity-0"} absolute bottom-0 left-0 rounded-t-xl bg-fadedGolden w-full h-1 transition-all duration-500 ease-in-out`}></div>
 		</li>
 		<li class="relative h-full text-center grid place-items-center">
 			<a href="#contactus" class={`${$inView==="contactus"?"text-fadedGolden":"text-white"} transition-colors duration-500 ease-in-out`}>Contact Us</a>
@@ -56,8 +56,8 @@ $: console.log($inView)
 			<div class={`${$inView==="services"?"opacity-100" : "opacity-0"} absolute bottom-0 left-0 rounded-t-xl bg-fadedGolden w-full h-1 transition-all duration-500 ease-in-out`}></div>
 		</li>
 		<li class="relative h-full text-center grid place-items-center">
-			<a href="#ourworks" class={`${$inView==="ourworks"?"text-fadedGolden":"text-white"} transition-colors duration-500 ease-in-out`}>Our Works</a>
-			<div class={`${$inView==="ourworks"?"opacity-100" : "opacity-0"} absolute bottom-0 left-0 rounded-t-xl bg-fadedGolden w-full h-1 transition-all duration-500 ease-in-out`}></div>
+			<a href="#portfolio" class={`${$inView==="portfolio"?"text-fadedGolden":"text-white"} transition-colors duration-500 ease-in-out`}>Our Works</a>
+			<div class={`${$inView==="portfolio"?"opacity-100" : "opacity-0"} absolute bottom-0 left-0 rounded-t-xl bg-fadedGolden w-full h-1 transition-all duration-500 ease-in-out`}></div>
 		</li>
 		<li class="relative h-full text-center grid place-items-center">
 			<a href="#contactus" class={`${$inView==="contactus"?"text-fadedGolden":"text-white"} transition-colors duration-500 ease-in-out`}>Contact Us</a>
