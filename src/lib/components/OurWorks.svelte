@@ -29,9 +29,6 @@
 
 		return rotatedArray;
 	}
-	function fuck(){
-		console.log("Kittu")
-	}
 
 </script>
 
