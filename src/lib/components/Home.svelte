@@ -7,18 +7,20 @@
 	<div class="h-screen w-full bg-black/40 bg-cover animateBG bg-no-repeat grid place-items-center max-md:px-10">
 		<div class="">
 			<h1 class="capitalize text-white font-casta text-[42px] md:text-[100px]">
-				We redefine your
+				Exceptional
 			</h1>
 			<div class="h-[48px] md:h-[120px] overflow-hidden">
 				<div class="font-casta text-fadedGolden animateText text-[42px] md:text-[100px]">
-					<h2>Dream.</h2>
-					<h2>Desire.</h2>
-					<h2>Future.</h2>
+					<h2>Dreams</h2>
+					<h2>Homes</h2>
+					<h2>Experiences</h2>
 				</div>
 			</div>
-			<h3 class="text-white text-base md:text-2xl py-5 md:py-10 font-medium">Dreams are meant to come true, We’ll make it happen for you</h3>
+			<h3 class="text-white text-base md:text-2xl py-5 md:py-10 font-medium">
+				Your Blueprint to Happiness.
+			</h3>
 			<div class="inline-flex gap-x-4">
-				<button class="bg-fadedGolden text-md md:text-2xl border-2 border-fadedGolden px-5 md:px-8 py-2 rounded-md text-white font-casta">Our Works</button>
+				<a href="#portfolio" class="bg-fadedGolden text-md md:text-2xl border-2 border-fadedGolden px-5 md:px-8 py-2 rounded-md text-white font-casta">Portfolio</a>
 				<button class="bg-transparent text-md md:text-2xl border-fadedGolden border-2 px-5 md:px-8 py-2 rounded-md text-fadedGolden font-casta">Contact Us</button>
 			</div>
 		</div>
