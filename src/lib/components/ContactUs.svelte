@@ -16,7 +16,11 @@
 				<div class="max-md:grid max-md:place-items-center">
 		<SectionTitle title="Contact Us" />
 			</div>
-		<h4 class="text-white font-medium text-md max-md:text-center md:text-2xl mt-8">Any queries? Feel free to reach us.</h4>
+		<h4 class="text-white font-bold text-lg max-md:text-center md:text-3xl mt-8">
+			Let's Begin Your Dream Project
+
+		</h4>
+		<h4 class="text-white/80 font-medium text-sm max-md:text-center md:text-xl mt-8">Ready to take the next step in your housing project? Contact us today to discuss your requirements and receive a detailed house building estimate. </h4>
 		<form action="" class="flex flex-col gap-y-10 mt-10">
 			<input class="px-10 py-4" placeholder="Name*">
 			<input  class="px-10 py-4" placeholder="Email*">
