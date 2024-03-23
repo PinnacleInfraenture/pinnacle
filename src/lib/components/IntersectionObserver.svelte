@@ -28,7 +28,7 @@
 
 	}}
 
-	id={id} class={`${classNames} transition-[blur,opacity,transform,translate] duration-1000 ease-in-out ${iv ? 'opacity-100 blur-0 -translate-x-10 translate-y-10' : 'blur-sm opacity-20 translate-x-0 translate-y-0'} overflow-clip`}>
+	id={id} class={`${classNames} transition-[blur,opacity,transform,translate] duration-1000 ease-in-out ${iv ? 'opacity-100 blur-0 translate-x-0 translate-y-0' : 'blur-sm opacity-20 translate-x-10 translate-y-10'} overflow-clip`}>
 		<slot />
 	</div>
 </div>
