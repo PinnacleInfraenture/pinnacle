@@ -4,7 +4,40 @@
   import { browser } from '$app/environment';
   import WhiteRight from "$lib/assets/whiteRight.svg"
   let carousel:any;
-  const data=[1,2,3,4,5]
+  const data =[
+    {
+      text:'The attention to detail and the quality of work is outstanding. Their team was professional, attentive, and truly understood our needs. We couldn\'t be happier.',
+name:'Nancy Marks'},
+
+    {
+text:'Our experience from start to finish was seamless, and the end result was a stunning house that we are proud to call our home. Thank you, Sharan and team, for your exceptional work.',
+name:'Reena Freddie'
+    },
+    {
+      text:'The attention to detail and the quality of work is outstanding. Their team was professional, attentive, and truly understood our needs. We couldn\'t be happier.',
+name:'Nancy Marks'},
+
+    {
+text:'Our experience from start to finish was seamless, and the end result was a stunning house that we are proud to call our home. Thank you, Sharan and team, for your exceptional work.',
+name:'Reena Freddie'
+    },
+    {
+      text:'The attention to detail and the quality of work is outstanding. Their team was professional, attentive, and truly understood our needs. We couldn\'t be happier.',
+name:'Nancy Marks'},
+
+    {
+text:'Our experience from start to finish was seamless, and the end result was a stunning house that we are proud to call our home. Thank you, Sharan and team, for your exceptional work.',
+name:'Reena Freddie'
+    },
+    {
+      text:'The attention to detail and the quality of work is outstanding. Their team was professional, attentive, and truly understood our needs. We couldn\'t be happier.',
+name:'Nancy Marks'},
+
+    {
+text:'Our experience from start to finish was seamless, and the end result was a stunning house that we are proud to call our home. Thank you, Sharan and team, for your exceptional work.',
+name:'Reena Freddie'
+    },
+  ]
 </script>
 
 {#if browser}
@@ -21,7 +54,7 @@
   >
   {#each data as item,idx}
     <div class={`transition-all duration-500 ease-in-out ${currentPageIndex!==idx&&"scale-90"}`}>
-		<ReviewCard />
+		<ReviewCard text={item.text} name={item.name} />
       </div>
       {/each}
       <div slot="prev" class="absolute -bottom-16 left-0">
