@@ -3,7 +3,7 @@
 	import IntersectionObserver from "./IntersectionObserver.svelte";
 
 </script>
-<IntersectionObserver id="home" classNames="">
+<div id="home">
 	<div class="h-screen w-full bg-black/40 bg-cover animateBG bg-no-repeat grid place-items-center max-md:px-10">
 		<div class="">
 			<h1 class="capitalize text-white font-casta text-[42px] md:text-[100px]">
@@ -25,7 +25,7 @@
 			</div>
 		</div>
 	</div>
-</IntersectionObserver>
+</div>
 <style>
 	@keyframes textScroll{
 	0%{
