@@ -4,7 +4,21 @@
 	import IntersectionObserver from "$lib/components/IntersectionObserver.svelte";
 	import ContactUs from "$lib/assets/contactUs.png"
 
+		let inView=false;
+	import {inview} from "svelte-inview"
 </script>
+
+<div class=""
+	use:inview={{
+		threshold:0.5,
+	}}
+	on:inview_enter={()=>{
+		inView=true;
+	}}
+	on:inview_leave={()=>{
+		inView=false;
+	}}>
+
 
 
 <IntersectionObserver id="contactus" classNames="w-full bg-greyBG py-32 flex flex-col md:flex-row items-stretch gap-x-20 relative max-md:px-10 md:pr-32">
@@ -14,13 +28,13 @@
 	<img src={YellowLines} alt="" class="absolute -top-40 right-5">
 	<div class="flex h-full min-h-full  flex-col w-full md:w-[60%] justify-between">
 				<div class="max-md:grid max-md:place-items-center">
-		<SectionTitle title="Contact Us" />
+		<SectionTitle show={inView} title="Contact Us" />
 			</div>
-		<h4 class="text-white font-bold text-lg max-md:text-center md:text-3xl mt-8">
+		<h4 class={`text-white font-bold text-lg max-md:text-center md:text-3xl mt-8 ${inView?'opacity-100 translate-y-0':'translate-y-10 opacity-0'} delay-300 transition-[opacity,transform] duration-700 ease-in-out`}>
 			Let's Begin Your Dream Project
 
 		</h4>
-		<h4 class="text-white/80 font-medium text-sm max-md:text-center md:text-xl mt-8">Ready to take the next step in your housing project? Contact us today to discuss your requirements and receive a detailed house building estimate. </h4>
+		<h4 class={`text-white/80 font-medium text-sm max-md:text-center md:text-xl mt-8 ${inView?'opacity-100 translate-y-0':'translate-y-10 opacity-0'} delay-700 transition-[opacity,transform] duration-700 ease-in-out`}>Ready to take the next step in your housing project? Contact us today to discuss your requirements and receive a detailed house building estimate. </h4>
 		<form action="" class="flex flex-col gap-y-10 mt-10">
 			<input class="px-10 py-4" placeholder="Name*">
 			<input  class="px-10 py-4" placeholder="Email*">
@@ -33,4 +47,4 @@
 		</form>
 	</div>
 </IntersectionObserver>
-
+</div>
