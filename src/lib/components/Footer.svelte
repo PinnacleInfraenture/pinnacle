@@ -30,9 +30,9 @@
 			<h3 class="font-semibold text-md md:text-2xl">Location</h3>
 		<p class="text-md md:text-2xl mt-4 md:mt-10 font-mormal text-muted">No.43,1st Floor, 5th Cross, 1st Block, Akshayanagar, Bangalore -560016 </p>
 			<div class="flex flex-col">
-				<a href="tel:+91-9448130666" class="text-[10px] md:text-md text-[#0A142F] border-b border-[#0081FE] my-6 w-fit">+91-9448130666
+				<a href="tel:+91-9448130666" class="text-[10px] md:text-lg text-[#0A142F] border-b border-[#0081FE] my-6 w-fit">+91-9448130666
 </a>
-				<a href="mail:contact@pinnacle.com" class="text-[10px] md:text-md text-[#0A142F] border-b border-[#0081FE] w-fit">contact@pinnacle.com</a>
+				<a href="mail:contact@pinnacle.com" class="text-[10px] md:text-lg text-[#0A142F] border-b border-[#0081FE] w-fit">contact@pinnacle.com</a>
 			</div>
 		</div>
 
